@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Stolzl';
+    src: url(../fonts/stolzl_book.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: url(../fonts/stolzl_medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat.ttf);
+}
