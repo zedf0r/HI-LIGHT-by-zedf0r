@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* :root {
+    
+} */
+
+.header {
+    color: #fff;
+}
+
+.header-container {
+    background-image: url('../img/header_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 824px;
+    padding: 115px 44px 61px;
+}
+
+.container-inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 106px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-family: 'Stolzl', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 117%;
+}
+
+.header-svg {
+    width: 306px;
+    height: 83px;
+}
+
+.header-text {
+    font-family: 'Stolzl', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.header-button {
+    width: 216px;
+    height: 47px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    padding: 0 24px 50px;
+    align-items: center;
+}
+
+.about-img {
+    width: 346px;
+    margin-bottom: 34px;
+}
+
+.about-text {
+    font-family: 'Stolzl', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 133%;
+    color: #202020;
+    width: 100%;
+    max-width: 360px;
+    padding: 0 5px;
+}
+
+.gap {
+    display: block;
+    margin-top: 10px;
+}
+
+.grinvich-information {
+    background-color: #eaeaea;
+    padding: 50px 17px;
+    height: 1360px;
+}
+
+.info {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.information-widget {
+    width: 100%;
+    max-width: 347px;
+    height: 135px;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 20px 16px 0;
+    position: relative;
+}
+
+.widget-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.widget-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #81848D;
+    margin-top: 19px;
+}
+
+.widget-img {
+    object-fit: cover;
+    position: relative;
+}
+
+.last-widget {
+    padding: 0;
+}
+
+.title-top {
+    position: absolute;
+    top: 450px;
+    font-size: 60px;
+    text-transform: uppercase;
+    left: 40px;
+}
+
+.text-top {
+    position: absolute;
+    top: 520px;
+    left: 40px;
+    width: 150px;
+}
