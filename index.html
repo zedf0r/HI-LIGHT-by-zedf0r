@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HI-LIGHT магазин одежды</title>
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/font.css" />
   </head>
   <body>
     <main class="page">
@@ -15,13 +15,13 @@
           <div class="container-inner">
             <h1 class="section-title">Новый проект от ТРЦ "Гринвич"</h1>
             <svg class="section-svg">
-              <use xlink:href="./img/sprite.svg#hi-light"></use>
+              <use xlink:href="./assets/svg/sprite.svg#hi-light"></use>
             </svg>
             <p class="section-text">
               fashion-пространство для коллекций российских дизайнеров.
             </p>
             <button class="section-button" type="button">
-              Перейти к форме
+              <p>Перейти к форме</p>
             </button>
           </div>
         </div>
@@ -31,35 +31,42 @@
           <svg class="about-svg">
             <use xlink:href="./assets/svg/sprite.svg#grinvich"></use>
           </svg>
-          <img class="about-img" src="./assets/img/grinvich.png" />
+          <img class="about-img" src="./assets/img/grinvich.png" alt="Фотография гринвича"/>
+          <p class="text">Торговый центр «Гринвич».</p>
           <p class="text">
-            Торговый центр «Гринвич». <br /><br />Расположен в историческом
-            центре Екатеринбурга, на первой линии трех основных транспортных
-            магистралей. <br /><br />Самый востребованный и посещаемый
-            торгово-развлекательный центр в Екатеринбурге и Уральском
-            Федеральном округе. <br /><br />Арендаторы, имеющие магазины в
-            Гринвиче показывают максимальные выручки, по сравнению со своими
-            магазинами или аналогичными в других торговых центрах Екатеринбурга.
+            Самый востребованный и посещаемый торгово-развлекательный центр в
+            Екатеринбурге и Уральском Федеральном округе.
+          </p>
+          <p class="text">
+            Расположен в историческом центре Екатеринбурга, на первой линии трех
+            основных транспортных магистралей.
+          </p>
+          <p class="text">
+            Арендаторы, имеющие магазины в Гринвиче показывают максимальные
+            выручки, по сравнению со своими магазинами или аналогичными в других
+            торговых центрах Екатеринбурга.
           </p>
         </div>
       </section>
       <section class="grinvich-information">
-        <div class="info">
-          <div class="information-widget">
-            <h3 class="widget-title">303 000 m<sup>2</sup></h3>
-            <p class="widget-text">Общая площадь</p>
-          </div>
-          <div class="information-widget">
-            <h3 class="widget-title">> 300</h3>
-            <p class="widget-text">Более 300 магазинов и ресторанов</p>
-          </div>
-          <div class="information-widget">
-            <h3 class="widget-title">1.560.000</h3>
-            <p class="widget-text">Посещений в месяц</p>
-          </div>
-          <div class="information-widget">
-            <h3 class="widget-title">> 3000</h3>
-            <p class="widget-text">Более 3000 паркинг мест</p>
+        <div class="wrap-information">
+          <div class="inner-information">
+            <div class="information-widget">
+              <h3 class="widget-title">303 000 <span class="square">m<sup>2</sup></span></h3>
+              <p class="widget-text">Общая площадь</p>
+            </div>
+            <div class="information-widget">
+              <h3 class="widget-title">> 300</h3>
+              <p class="widget-text">Более 300 магазинов и ресторанов</p>
+            </div>
+            <div class="information-widget">
+              <h3 class="widget-title">1.560.000</h3>
+              <p class="widget-text">Посещений в месяц</p>
+            </div>
+            <div class="information-widget">
+              <h3 class="widget-title">> 3000</h3>
+              <p class="widget-text">Более 3000 паркинг мест</p>
+            </div>
           </div>
           <div class="information-widget last-widget">
             <img
@@ -67,10 +74,12 @@
               src="./assets/img/widget.png"
               alt="Тут должна быть картинка"
             />
-            <h3 class="widget-title title-top">Метро</h3>
-            <p class="widget-text text-top">
-              Свой вход в метро ст. Геологическая
-            </p>
+            <div class="widget-text_top">
+              <h3 class="widget-title widget-last-title">Метро</h3>
+              <p class="widget-text widget-last-text">
+                Свой вход в метро ст. Геологическая
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -111,11 +120,11 @@
               <svg class="fashion_store-svg">
                 <use xlink:href="./assets/svg/sprite.svg#brand"></use>
               </svg>
-              <p class="fashion_store-text">
-                Торговые площади <br />
-                для бренда <br />
-                от 20 м2
-              </p>
+              <div class="fashion_store-text-box">
+                <p class="fashion_store-text">Торговые площади</p>
+                <p class="fashion_store-text">для бренда</p>
+                <p class="fashion_store-text">от 20 м2</p>
+              </div>
             </div>
             <div class="fashion_store-information">
               <svg class="fashion_store-svg">
@@ -240,22 +249,38 @@
             бренда!
           </p>
           <form action="" class="form">
-            <input type="text" placeholder="Бренд" class="field"/>
-            <input type="text" placeholder="Сайт (страница соц.сети)" class="field"/>
-            <input type="text" placeholder="Контактное лицо" class="field"/>
-            <input type="text" placeholder="Телефон" class="field"/>
-            <input type="text" placeholder="Почта" class="field"/>
+            <input type="text" placeholder="Бренд" class="field" />
+            <input
+              type="text"
+              placeholder="Сайт (страница соц.сети)"
+              class="field"
+            />
+            <input type="text" placeholder="Контактное лицо" class="field" />
+            <input type="text" placeholder="Телефон" class="field" />
+            <input type="text" placeholder="Почта" class="field" />
             <div class="checkbox-container">
-              <input name="check" type="checkbox" id="check1-label" class="checkbox" />
-              <label class="label-check" for="check1-label">Я принимаю условия Пользовательского соглашения и <a class="feedback-link" href="#">Политику конфидинциальности</a></label>
+              <input
+                name="check"
+                type="checkbox"
+                id="check1-label"
+                class="checkbox"
+              />
+              <label class="label-check" for="check1-label">
+                Я принимаю условия Пользовательского соглашения и
+                <a class="feedback-link">Политику конфидинциальности</a>
+              </label>
             </div>
-            <button type="button" class="feedback-button"><p>Отправить заявку</p></button>
+            <button type="button" class="feedback-button">
+              <p>Отправить заявку</p>
+            </button>
           </form>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer-text">Сделано в  <a class="footer-link" href="#">Digital Kontora</a></p>
+      <p class="footer-text">
+        Сделано в <a class="footer-link" href="#">Digital Kontora</a>
+      </p>
     </footer>
   </body>
 </html>
