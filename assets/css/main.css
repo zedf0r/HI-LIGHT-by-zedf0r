@@ -16,7 +16,6 @@
     --color-white: #fff;
     --font-family: 'Stolzl', sans-serif;
     --second-family: 'Montserrat', sans-serif;
-    --font-family-regular: 'Stolzl Regular', sans-serif;
 }
 
 .section {
@@ -179,7 +178,8 @@
 .section-fashion_store {
     padding: 32px 10px 0;
     color: var(--color-white);
-    font-family: var(--font-family-regular);
+    font-family: var(--font-family);
+    font-weight: 450;
 }
 
 .fashion_store-inner {
@@ -219,7 +219,6 @@
 .fashion_store-text {
     font-size: 12px;
     text-align: center;
-    font-weight: 400;
     line-height: 16px;
 }
 
@@ -241,8 +240,8 @@
 }
 
 .cooperation-text {
-    font-family: var(--font-family-regular);
-    font-weight: 400;
+    font-family: var(--font-family);
+    font-weight: 450;
     padding: 0;
     margin: 19px 0 33px;
 }
@@ -254,9 +253,9 @@
 }
 
 .item-title {
-    font-family: var(--font-family-regular);
+    font-family: var(--font-family);
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 450;
     margin-bottom: 7px;
 }
 
@@ -315,8 +314,8 @@
 }
 
 .marketplace-text {
-    font-family: var(--font-family-regular);
-    font-weight: 400;
+    font-family: var(--font-family);
+    font-weight: 450;
     color: #fff;
     line-height: 25px;
     padding: 0;
