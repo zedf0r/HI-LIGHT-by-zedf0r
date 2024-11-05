@@ -37,7 +37,7 @@
     flex-wrap: nowrap;
     gap: 106px;
     text-align: center;
-    max-width: 300px;
+    max-width: 514px;
     margin: 0 auto;
 }
 
@@ -51,6 +51,7 @@
 .section-svg {
     flex: 1 1 100%;
     height: 83px;
+    margin-top: 30px;
 }
 
 .section-text {
@@ -58,6 +59,10 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+}
+
+.desktop-text {
+    display: none;
 }
 
 .section-button {
@@ -74,10 +79,6 @@
     padding: 50px 24px;
 }
 
-.about-container {
-    display: flex;
-}
-
 .about-svg_desktop {
     display: none;
 }
@@ -85,21 +86,23 @@
 .about-content {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
 }
 
-.about-svg_mobile {
+.about-svg {
     height: 42px;
-    width: 100%;
+    width: 320px;
 }
 
 .box-mobile {
     order: 1;
+    margin: 0 auto;
 }
 
 .about-img_container {
     order: 2;
-    margin-top: 55px;
+    width: 100%;
+    margin: 55px auto 0;
+    max-width: 500px;
 }
 
 .about-img {
@@ -109,11 +112,11 @@
 }
 
 .content-text {
-    margin-top: 38px;
     order: 3;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin: 38px auto 0;
 }
 
 .text {
@@ -215,18 +218,18 @@
     background: linear-gradient(155deg, #000 2.6%, #fa6f43 97.4%);
     border-radius: 15px;
     text-align: center;
-    padding: 95px 0 73px;
+    padding: 95px 15px 73px;
 }
 
 .fashion_store-containter {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 50px 100px;
 }
 
 .fashion_store-information {
-    width: 230px;
+    flex: 0 0 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,7 +260,7 @@
 
 .cooperation-inner {
     width: 100%;
-    max-width: 808px;
+    max-width: 858px;
 }
 
 .cooperation-title {
@@ -267,11 +270,16 @@
     color: #000;
 }
 
+.desktop-text-title {
+    display: none;
+}
+
 .cooperation-text {
     font-family: var(--font-family);
     font-weight: 450;
     padding: 0;
     margin: 19px 0 33px;
+    max-width: 420px;
 }
 
 .list {
@@ -316,6 +324,7 @@
 
 .button-map {
     padding: 15px 30px;
+    height: 48px;
     border-radius: 7px;
     font-family: var(--second-family);
     font-weight: 500;
@@ -326,7 +335,7 @@
 }
 
 .marketplace-inner {
-    width: 100%;
+    flex: 1 1 100%;
     background: linear-gradient(155deg, #000 2.6%, #fa6f43 97.4%);
     color: #fff;
     padding: 48px 0;
@@ -352,13 +361,19 @@
     margin-bottom: 28px;
 }
 
+.marketplace-box_img {
+    max-width: 500px;
+}
+
 .marketplace-img {
     width: 100%;
-    max-width: 758px;
+    height: 100%;
 }
 
 .market-place_list {
     padding: 0 30px;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .feedback-svg {
@@ -367,16 +382,21 @@
 }
 
 .feedback {
-    padding: 81px 38px 62px 34px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     background-color: #eaeaea;
+    padding: 62px 34px;
 }
 
 .feedback-inner {
     width: 100%;
     max-width: 628px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -385,18 +405,21 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
-    max-width: 628px;
+    flex: 1 1 76px;
+    text-align: center;
+    max-width: 450px;
 }
 
 .form {
     max-width: 437px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .field {
     width: 100%;
+    max-width: 321px;
     max-width: 437px;
     height: 50px;
     border: 1px solid #cdcdcd;
@@ -477,4 +500,129 @@
 
 .footer-link {
     text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .cooperation-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .list-item {
+        flex: 0 0 calc(50% - 30px)
+    }
+
+    .mobile-text-title {
+        display: none;
+    }
+
+    .desktop-text-title {
+        display: block;
+    }
+
+    .button-map {
+        align-self: center;
+    }
+
+    .marketplace-inner {
+        background: linear-gradient(138deg, #041835 23.44%, rgba(40, 94, 7, 0.9) 100%);
+        padding: 48px 0 0;
+    }
+
+    .marketplace-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    
+    .market-place_list {
+        flex: 1 1 220px;
+        max-width: 420px;
+    }
+
+    .marketplace-box_img {
+        max-width: 690px;
+        flex: 1 1 300px;
+    }
+
+    .market-place_item {
+        flex: 0 0 24px;
+    }
+
+    .marketplace-content-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .marketplace-text {
+        max-width: 470px;
+    }
+
+    .form {
+        gap: 22px;
+    }
+
+    .double-field {
+        flex: 1 1 calc(50% - 22px)
+    }
+}
+
+@media (min-width: 900px) {
+    .mobile-text {
+        display: none;
+    }
+
+    .desktop-text {
+        display: block;
+    }
+
+    .about-svg_desktop {
+        display: block;
+        margin-top: 90px;
+    }
+
+    .section-about-grinvich {
+        padding: 100px 3%;
+    }
+
+    .box-mobile {
+        display: none;
+    }
+    
+    .about-content {
+        flex-direction: row;
+        width: 700px;
+    }
+
+    .about-img_container {
+        margin: 0;
+        max-width: 700px;
+    }
+
+    .about-container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    .content-text {
+        margin: 57px 0;
+    }
+    
+    .section-fashion_store {
+        display: flex;
+    }
+
+    .fashion_store-inner {
+        margin: 0 auto;
+        background: linear-gradient(138deg, #041835 23.44%, rgba(40, 94, 7, 0.9) 100%);
+    }
 }

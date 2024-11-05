@@ -17,9 +17,10 @@
             <svg class="section-svg">
               <use xlink:href="./assets/svg/sprite.svg#hi-light"></use>
             </svg>
-            <p class="section-text">
+            <p class="section-text mobile-text">
               fashion-пространство для коллекций российских дизайнеров.
             </p>
+            <p class="section-text desktop-text">концептуальное fashion-пространство</p>
             <button class="section-button" type="button">Перейти к форме</button>
           </div>
         </div>
@@ -30,22 +31,40 @@
             <svg class="about-svg">
               <use xlink:href="./assets/svg/sprite.svg#grinvich"></use>
             </svg>
-          </div>
-          <div class="about-content">
-            <div class="box-mobile">
-              <svg class="about-svg_mobile">
-                <use xlink:href="./assets/svg/sprite.svg#grinvich"></use>
-              </svg>
-            </div>
             <div class="content-text">
               <p class="text">Торговый центр «Гринвич».</p>
               <p class="text">
+                Расположен в историческом центре Екатеринбурга, на первой линии трех
+                основных транспортных магистралей.
+              </p>
+              <p class="text">
                 Самый востребованный и посещаемый торгово-развлекательный центр в
                 Екатеринбурге и Уральском Федеральном округе.
+                
               </p>
+              <p class="text">
+                Арендаторы, имеющие магазины в Гринвиче показывают максимальные
+                выручки, по сравнению со своими магазинами или аналогичными в других
+                торговых центрах Екатеринбурга.
+              </p>
+            </div>
+          </div>
+          <div class="about-content">
+            <div class="box-mobile">
+              <svg class="about-svg about-svg_mobile">
+                <use xlink:href="./assets/svg/sprite.svg#grinvich"></use>
+              </svg>
+            </div>
+            <div class="content-text mobile-text">
+              <p class="text">Торговый центр «Гринвич».</p>
               <p class="text">
                 Расположен в историческом центре Екатеринбурга, на первой линии трех
                 основных транспортных магистралей.
+              </p>
+              <p class="text">
+                Самый востребованный и посещаемый торгово-развлекательный центр в
+                Екатеринбурге и Уральском Федеральном округе.
+                
               </p>
               <p class="text">
                 Арендаторы, имеющие магазины в Гринвиче показывают максимальные
@@ -160,7 +179,8 @@
       </section>
       <section class="cooperation">
         <div class="cooperation-inner">
-          <h2 class="cooperation-title">Условия сотрудничества</h2>
+          <h2 class="cooperation-title mobile-text-title">Условия сотрудничества</h2>
+          <h2 class="cooperation-title desktop-text-title">Наши преимущества</h2>
           <p class="text cooperation-text">
             Мы берем на себя все сопутствующие расходы:
           </p>
@@ -215,23 +235,25 @@
             </p>
           </div>
           <div class="marketplace-container">
-            <img
+            <div class="marketplace-box_img">
+              <img
               class="marketplace-img"
               src="./assets/img/MacBook_Pro.png"
               alt="макбук"
             />
+            </div>
             <ul class="list market-place_list">
-              <li class="list-item">
+              <li class="list-item market-place_item">
                 <h3 class="item-title">Быстрая интеграция с сервисом</h3>
               </li>
-              <li class="list-item">
+              <li class="list-item market-place_item">
                 <h3 class="item-title">Открытая система управления заказами</h3>
                 <p class="item-text">
                   Вы сможете сами управлять своими онлайн заказами и отгружать
                   товар с удобного для вас склада.
                 </p>
               </li>
-              <li class="list-item">
+              <li class="list-item market-place_item">
                 <h3 class="item-title">Система аналитики</h3>
                 <p class="item-text">
                   Позволит вам оперативно определять тренды продаж, что помогает
@@ -239,7 +261,7 @@
                   отслеживать нарастающий тренд текущего в реальном времени.
                 </p>
               </li>
-              <li class="list-item">
+              <li class="list-item market-place_item">
                 <h3 class="item-title">Online остатки</h3>
                 <p class="item-text">
                   Контроль остатков товара на складе вне зависимости от точки
@@ -260,15 +282,15 @@
             бренда!
           </p>
           <form action="" class="form">
-            <input type="text" placeholder="Бренд" class="field" />
+            <input type="text" placeholder="Бренд" class="field double-field" />
             <input
               type="text"
               placeholder="Сайт (страница соц.сети)"
-              class="field"
+              class="field double-field"
             />
             <input type="text" placeholder="Контактное лицо" class="field" />
-            <input type="text" placeholder="Телефон" class="field" />
-            <input type="text" placeholder="Почта" class="field" />
+            <input type="text" placeholder="Телефон" class="field double-field" />
+            <input type="text" placeholder="Почта" class="field double-field" />
             <div class="checkbox-container">
               <input
                 name="check"
