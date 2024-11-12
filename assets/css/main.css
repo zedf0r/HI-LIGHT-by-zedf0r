@@ -33,7 +33,6 @@
 
 .container-inner {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     gap: 108px;
     text-align: center;
@@ -46,6 +45,7 @@
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
+    margin: 0 auto;
 }
 
 .about-svg_use {
@@ -64,6 +64,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+    margin: 0 auto;
 }
 
 .desktop-text {
@@ -512,6 +513,10 @@
 }
 
 @media (min-width: 600px) {
+    .br-space {
+        display: none;
+    }
+
     .cooperation-inner {
         display: flex;
         flex-direction: column;
